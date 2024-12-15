@@ -64,6 +64,7 @@ flutter:
   assets:
      - assets/images/ssi.png
      - assets/images/logo.png
+     - assets/images/quizGif.gif
 
     
 
