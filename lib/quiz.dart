@@ -36,24 +36,35 @@ class _QuizState extends State<Quiz> {
       });
     }
   }
- 
+  void restartQuiz(){
+    setState(() {
+      selectedAnswers=[];
+    activeScreen='start-screen';
+    });
+    
+  }
   @override
   Widget build(context){
     Widget screenWidget=StartScreen(switchScreen);
 
     if(activeScreen=='questions-screen')
     {
-      screenWidget= QuestionsScreen(onSelectAnswer: chooseAnswer,);
+      screenWidget= QuestionsScreen(onSelectAnswer: chooseAnswer);
+    }
+    
+    if(activeScreen=='start-screen')
+    {
+      screenWidget=  StartScreen(switchScreen);
     }
     if(activeScreen=='result-screen')
     {
-      screenWidget= ResultScreen(chosenAnswers:selectedAnswers,);
+      screenWidget= ResultScreen(chosenAnswers:selectedAnswers, onRestart: restartQuiz);
     }
     return    MaterialApp(
       debugShowCheckedModeBanner: false,
             home:Scaffold(
               appBar: AppBar(
-                title: const Text('Quizz App'),
+                title: const Text('@suleymann.exe'),
                 backgroundColor: HexColor("#FFB900"),
                 centerTitle: true,
               ),

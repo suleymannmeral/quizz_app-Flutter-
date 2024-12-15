@@ -19,7 +19,7 @@ class StartScreen extends StatelessWidget {
           
           ),
             Text(
-              'Learn Flutter The Fun Way',
+              'Programming Language Quiz',
             style:  GoogleFonts.sixtyfour(
               color: HexColor("#FFB900"),
               fontSize: 15,

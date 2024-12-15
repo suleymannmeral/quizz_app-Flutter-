@@ -1,54 +1,46 @@
 import 'package:quizz_app/models/quiz_question.dart';
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UI?',
+    'What programming language does Flutter use?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'Dart',
+      'Rust',
+      'Go',
+      'Python',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+  QuizQuestion('Which programming language is older than others?', [
+    'C',
+    'PHP',
+    'Python',
+    'C#',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'Which framework does not use c# for developing?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Laravel',
+      'Unity',
+      'ASP.Net',
+      'Xamarin',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'Which programming language was used for GTA San Andreas',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
+      'C++',
+      'C#',
+      'C',
+      'Fortan',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'Which One Is Not a Programming Language?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      'HTML',
+      'Ruby',
+      'Pascal',
+      'Swift',
     ],
   ),
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
+
 ];
